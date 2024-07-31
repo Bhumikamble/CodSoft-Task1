@@ -1,0 +1,350 @@
+
+body, h1, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #4B0082;
+}
+
+.portfolio h1 {
+    font-size: 35px;
+    padding-left: 90px;
+    color:white;
+}
+
+.abouto {
+    padding-right: 90px;
+    color: white;
+}
+
+.abouto a {
+    color:white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.about a:hover {
+    text-decoration: underline;
+  
+}
+
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+   width:100%;
+    height:50%;
+   
+    box-sizing: border-box;
+}
+/* //overlay box */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 190%; 
+   
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 70%; 
+    max-width: 600px; 
+    background-color: white;
+    color: #4B0082; 
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin-top:150px; 
+   
+   
+}
+
+.overlay-box p {
+    margin: 0; 
+    font-size: 28px;
+    
+}
+
+.line1 {
+    margin-bottom: 10px;
+}
+
+.line2 {
+    margin-bottom: px; 
+}
+/* for underline */
+hr {
+    border: none; 
+    height: 2px; 
+    background-color: #333; 
+    width: 20%; 
+    margin: 20px auto; 
+}
+
+.typing {
+    font-weight: bold;
+    white-space: pre;
+}
+
+
+
+/* Image Container */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; 
+    overflow: hidden; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 70%; 
+    max-width: 600px; 
+    color: #4B0082; 
+    padding: 30px;
+    border-radius: 10px; 
+    text-align: center;
+    border-color: #4B0082;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-box p {
+    margin: 0; 
+    font-size: 28px;
+}
+
+.line1 {
+    margin-bottom: 10px; 
+}
+
+.line2 {
+    margin-bottom: 10px; 
+}
+
+
+.custom-underline {
+    position: relative;
+    height: 2px; 
+    background-color: #4B0082 ; 
+    width: 999px; 
+    margin-top: 25px; 
+    margin-left:200px;
+}
+
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    align-items: center;
+    padding-top: 40px
+    background-color white;
+    margin-top: 25px;
+    
+}
+
+.about-me-image {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-left: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 250px;
+}
+
+.about-me-content {
+    max-width: 45%;
+    padding-block: 20px;
+    padding-left: 140px;
+
+}
+
+.about-me-content h2 {
+    font-size: 36px;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+.about-me-content p {
+    font-size: 20px;
+    color: #333;
+}
+
+/* Programming Skills Section */
+.programming-skills {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.programming-skills h2 {
+    font-size: 36px;
+    color: #4B0082;
+    margin-bottom: 20px;
+    
+}
+
+.skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px; 
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.skill-card {
+    width: calc(25% - 10px); 
+    height: 220px;
+    margin: 0; 
+    perspective: 1000px; 
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.skill-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front {
+    background: #fff;
+}
+
+.card-front img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.card-front h3 {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #4B0082;
+}
+
+.card-back {
+    background:white;
+    transform: rotateY(180deg);
+    color: black;
+}
+
+.card-back h3 {
+    margin-bottom: 10px;
+    color: #4B0082;
+    font-size: 18px;
+}
+
+.card-back p {
+    padding: 0 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#4B0082
+}
+
+footer p {
+    color: white;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Initially hidden elements */
+.about-me-content,
+#programming-skills {
+    opacity: 0;
+}
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: #4B0082;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTopBtn:hover {
+    background-color: white;
+}
